@@ -1,0 +1,30 @@
+{
+    "description": "项目配置文件。",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "condition": false
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.31.1",
+    "appid": "wx877ed24c0e26f59d",
+    "projectname": "2048",
+    "condition": {},
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    },
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
+}

@@ -1,0 +1,12 @@
+/* pages/hello/index.wxss */
+.btn1 {
+    width:80%;
+    margin-top:130rpx;
+    background-color: rgb(106, 0, 95);
+    color: white;
+    border-radius: 98rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

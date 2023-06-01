@@ -1,0 +1,19 @@
+<form bindsubmit="submit11">
+    <van-cell-group>
+    <van-field
+    name="username"
+    value="{{ username }}"
+    label="用户名"
+    placeholder="请输入用户名"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    name="phone"
+    value="{{ phone }}"
+    label="联系方式（QQ）"
+    placeholder="输入qq账号"
+  />
+</van-cell-group>
+    <button class="btn1" form-type="submit" type="primary" bindtap="go2detail">注册/登陆</button>
+</form>

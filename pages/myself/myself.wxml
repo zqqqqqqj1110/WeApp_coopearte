@@ -1,0 +1,14 @@
+<view className="user_main">
+<view className="orders_title">开发人员简介</view>
+  <view>项目主要开发人员：</view>
+  <view className="zhengwen">基地唯一指定工具箱，李姓和谭姓大佬</view>
+  <view className="zhengwen">qq：913278533</view>
+  <image className="pic" src="../../img/profile.png"></image>
+
+  <view className="orders_title">开发者寄语</view>
+  <view>欢迎来到七院数学文化月专场，也十分感谢使用我的作品，谢谢！！！</view>
+  <view className="orders_title">联系我</view>
+  <view>邮箱：913278533@qq.com</view>
+</view>
+
+

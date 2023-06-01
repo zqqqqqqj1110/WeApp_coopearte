@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/registration/registration",
+    "pages/index/index",
+    "pages/2048/2048",
+    "pages/rank/rank",
+    "pages/myself/myself"
+  ],
+
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#faf8ee",
+    "navigationBarTitleText": "数学文化月",
+    "navigationBarTextStyle":"black"
+  }
+
+  
+}

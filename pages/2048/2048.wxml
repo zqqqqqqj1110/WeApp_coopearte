@@ -1,0 +1,53 @@
+<view class="container">
+
+  <view class="game-body">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+    <view class="heading">
+      	<text class="title">2048</text>
+      	<view class="scores-container">
+        	<view class="score-container">{{score}}</view>
+      		<view class="best-container">{{highscore}}</view>
+      	</view>
+    </view>
+
+    <view class="above-game">
+      	<text class="game-intro">你的极限是多少？</text>
+      	<text class="restart-button" bindtap="restart">新开始</text>
+        
+    </view>
+
+    <view class="game-container">
+
+        <!--游戏结束显示  -->
+        <view class="game-message game-{{over ? (win ? 'won' : 'over') : ''}}">
+          	<text class="over-msg">{{overMsg}}</text>
+          	<view class="lower">
+            <form bindsubmit="UpHigestScore">
+                <button bindtap="go2rank"class='btn1' form-type="submit" type="primary" >😘提交我的最高分😘</button>
+            </form>
+        	</view>
+        </view>
+
+	    <view class="grid-container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+			<view wx:for="{{grids}}" wx:for-index="rowIdx" wx:key="rowIdx" wx:for-item="row" class="grid-row">
+			  	<view wx:for="{{row}}" wx:for-index="colIdx" wx:key="colIdx" wx:for-item="cell" class="grid-cell">
+			  		<view class="tile tile-{{cell.value}}">
+			  			<view wx:if="{{cell}}" class="tile-inner">
+			      			{{cell.value}}
+			      		</view>
+			  		</view>
+			  	</view>
+			</view>
+	    </view>
+
+  	</view>
+  	<view class="game-explanation">
+      <view class="important">如何开始：</view> 手指上下左右滑动
+    </view>
+    <view>
+        <button bindtap="go2rank" class='btn1'type="primary">查看排名入口</button>
+    </view>
+</view>
+</view>

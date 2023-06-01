@@ -1,0 +1,30 @@
+<view class="header">
+  <text class="title">分数排行榜</text>
+</view>
+<view class="list">
+  <view class="item">
+    <text class="text">名次</text>
+    <text class="text">名字</text>
+    <text class="text">分数</text>
+  </view>
+  <block wx:for="{{pageData}}" wx:key="_id">
+    <view class="item">
+      <text class="text">{{index + 1 + (currentPage-1)*pageSize}}</text>
+      <text class="text">{{item.name}}</text>
+      <text class="text">{{item.score}}</text>
+    </view>
+  </block>
+  <view wx:if="{{pageCount>1}}" class="pagination">
+    <button class="btn-prev" wx:if="{{currentPage > 1}}" bindtap="prevPage">上一页</button>
+    <button class="btn-next" wx:if="{{currentPage < pageCount}}" bindtap="nextPage">下一页</button>
+</view>
+
+    <view>
+        <button class="btn1" type="primary" bindtap="refresh">点我刷新</button>
+    </view>
+
+    <view>
+        <text class="bt_dash_line">没有分数请返回再提交一遍哦~~依然没有分数请联系作者</text>
+        <button class="btn1" type="default" bindtap="go2myself">关于作者</button>
+    </view>
+</view>
